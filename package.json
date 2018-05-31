@@ -4,19 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node node_modules/lab/bin/lab -v -l -c",
     "start": "node app.js"
   },
   "dependencies": {
     "dotenv": "5.0.1",
-    "hapi": "16.6.2"
+    "hapi": "16.6.2",
+    "hapi-ioredis": "3.0.0",
+    "request": "^2.87.0",
+    "request-promise": "4.2.2"
   },
   "devDependencies": {
     "code": "3.0.1",
     "eslint": "4.17.0",
     "eslint-config-airbnb-base": "12.1.0",
     "eslint-plugin-import": "2.9.0",
-    "lab": "10.9.0",
+    "lab": "^10.9.0",
     "prettier-eslint": "8.8.1"
   },
   "author": "",
